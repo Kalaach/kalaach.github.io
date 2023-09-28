@@ -237,6 +237,10 @@ const drHorvathBelaJs = (function (observerHandler, textRevealer) {
   };
 })(observerHandler, textRevealer);
 
-document.addEventListener('DOMContentLoaded', () => {
+if (document.readyState) {
   drHorvathBelaJs.init();
-})
+} else {
+  document.addEventListener('DOMContentLoaded', () => {
+    drHorvathBelaJs.init();
+  });
+}
