@@ -1,0 +1,45 @@
+#media-player-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 4;
+  transition: opacity 0.5s;
+}
+
+#media-player-container.visible {
+  display: flex;
+}
+
+#media-player-container.outro {
+  opacity: 0;
+}
+
+#media-player {
+  width: 80vw;
+  height: 80vh;
+}
+
+#close-media-player {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  font-size: 47px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+#close-media-player:hover {
+  border: 2px solid white;
+}

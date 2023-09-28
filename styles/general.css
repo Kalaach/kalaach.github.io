@@ -1,0 +1,109 @@
+i {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+.page-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.content-container {
+  padding-top: 140px;
+  padding-bottom: 120px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 760px) {
+  .content-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.content-number-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content-number-container .content-number {
+  position: relative;
+  margin-bottom: 120px;
+  font-family: "PT Serif", serif;
+  font-size: 30px;
+}
+
+.content-number-container .content-number.white {
+  color: white;
+}
+
+.content-number-container .content-number.white::before,
+.content-number-container .content-number.white::after {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.content-number-container .content-number::before,
+.content-number-container .content-number::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 54px;
+  height: 72px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.content-number-container .content-number::before {
+  transform: translate(-28px, -35px);
+  transition: .5s transform;
+}
+
+.content-number-container.animate .content-number::before {
+  transform: translate(-32px, -40px);
+}
+
+.content-number-container .content-number::after {
+  transform: translate(-28px, -35px);
+  transition: .5s transform;
+}
+
+.content-number-container.animate .content-number::after {
+  transform: translate(-23px, -30px);
+}
+
+.content-number-container .content-number .content-number-inner {
+  opacity: 0;
+  transition: 1s opacity;
+  transition-delay: .3s;
+}
+
+.content-number-container.animate .content-number .content-number-inner {
+  opacity: 1;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "PT Serif", serif;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  margin-right: 60px;
+}
+
+.main-nav ul li:last-child {
+  margin-right: 0;
+}

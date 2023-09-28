@@ -1,0 +1,17 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up-landing-menu {
+  0% {
+    transform: translateY(88px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

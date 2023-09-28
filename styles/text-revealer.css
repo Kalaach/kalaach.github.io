@@ -1,0 +1,26 @@
+.text-revealer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-revealer .text-revealer-item {
+  display: inline-block;
+  margin-right: 0.25em;
+  overflow: hidden;
+}
+
+.text-revealer .text-revealer-item:last-child {
+  margin-right: 0;
+}
+
+.text-revealer .text-revealer-item .text-revealer-item-inner {
+  display: inline-block;
+  transform: translate(-40px, 100%);
+  opacity: 0;
+  transition: transform 1s, opacity 2s;
+}
+
+.text-revealer.reveal .text-revealer-item .text-revealer-item-inner {
+  transform: translate(0, 0);
+  opacity: 1;
+}

@@ -1,0 +1,22 @@
+.contact-content .contact-name {
+  display: flex;
+  justify-content: center;
+  font-family: "PT Serif", serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 760px) {
+  .contact-content .contact-name {
+    font-size: 30px;
+  }
+}
+
+.contact-content .contact-info {
+  padding-top: 60px;
+  padding-bottom: 90px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
