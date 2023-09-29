@@ -39,6 +39,12 @@ u {
   font-size: 30px;
 }
 
+@media screen and (max-width: 760px) {
+  .content-number-container .content-number {
+    margin-bottom: 60px;
+  }
+}
+
 .content-number-container .content-number.white {
   color: white;
 }
@@ -85,6 +91,23 @@ u {
 
 .content-number-container.animate .content-number .content-number-inner {
   opacity: 1;
+}
+
+.content-title {
+  display: none;
+  justify-content: center;
+  margin-bottom: 120px;
+  font-size: 22px;
+}
+
+.content-title.white {  
+  color: white;
+}
+
+@media screen and (max-width: 760px) {
+  .content-title {
+    display: flex;
+  }
 }
 
 .main-nav {
