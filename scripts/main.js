@@ -25,7 +25,6 @@ const textRevealer = (function () {
 })();
 
 const observerHandler = (function () {
-  let iustitiaRallax;
   const elementsToObserve = [
     {
       idType: ID_TYPE.id,
@@ -37,7 +36,6 @@ const observerHandler = (function () {
             headerElement.classList.remove('visible');
           } else {
             headerElement.classList.add('visible');
-            iustitiaRallax.start();
           }
         });
       }, {
@@ -144,8 +142,6 @@ const observerHandler = (function () {
 
   function initRallax() {
     rallax('.video-container', { speed: 0.4 });
-    iustitiaRallax = rallax('.bio-background-container', { speed: 0.4 });
-    iustitiaRallax.stop();
   }
 
   return {

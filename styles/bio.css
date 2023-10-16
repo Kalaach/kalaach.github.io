@@ -15,34 +15,6 @@
   font-family: "PT Serif", serif;
 }
 
-.bio-content .quote-container.show-marks::before,
-.bio-content .quote-container.show-marks::after {
-  opacity: 1;
-}
-
-.bio-content .quote-container::before,
-.bio-content .quote-container::after {
-  position: absolute;
-  font-size: 210px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.4);
-  opacity: 0;
-  transition: 1s opacity;
-  transition-delay: 0.5s;
-}
-
-.bio-content .quote-container::before {
-  content: "“";
-  top: -60px;
-  left: -50px;
-}
-
-.bio-content .quote-container::after {
-  content: "”";
-  bottom: -160px;
-  right: 40px;
-}
-
 .bio-content .quote-container .quote {
   font-size: 60px;
   font-weight: bold;
@@ -63,22 +35,4 @@
 
 .bio-content .bio-text-container.reveal {
   opacity: 1;
-}
-
-.bio-background-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url("../assets/images/sector_2_background.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  z-index: 1;
-}
-
-@media screen and (max-width: 760px) {
-  .bio-background-container {
-    display: none;
-  }
 }
